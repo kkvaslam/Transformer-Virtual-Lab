@@ -1,7 +1,7 @@
 
 # Virtual Transformer Lab: Efficiency vs Load Resistance
 This virtual experiment simulates the efficiency of a transformer as a function of resistive load.
-It is based on the PHYS‑194 Lab Manual (Transformer Experiment – Part 2).
+It is based on the PHYS‑194 Lab Manual.
 
 ## How to use
 Open index.html in a browser or host via GitHub Pages.
