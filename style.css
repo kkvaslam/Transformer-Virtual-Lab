@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 20px;
+}
+.controls {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+table {
+    width: 50%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.graph {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
