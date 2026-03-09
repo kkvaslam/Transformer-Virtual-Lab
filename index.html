@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Efficiency Virtual Lab</title>
+    <link rel="stylesheet" href="style.css" />
+    https://cdn.jsdelivr.net/npm/chart.js
+</head>
+<body>
+    <header>
+        <h1>Transformer Efficiency Virtual Lab (Part 2)</h1>
+        <p>Simulating efficiency as a function of resistive load.</p>
+    </header>
+
+    <section class="controls">
+        <label for="resistance">Select Load Resistance (Ω):</label>
+        <select id="resistance">
+            <option value="5">5 Ω</option>
+            <option value="20">20 Ω</option>
+            <option value="40">40 Ω</option>
+            <option value="80">80 Ω</option>
+            <option value="120">120 Ω</option>
+            <option value="140">140 Ω</option>
+            <option value="160">160 Ω</option>
+            <option value="200">200 Ω</option>
+            <option value="280">280 Ω</option>
+        </select>
+        <button onclick="runSimulation()">Run Simulation</button>
+    </section>
+
+    <section class="results">
+        <h2>Measured Values</h2>
+        <table>
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td>Vp</td><td id="vp"></td></tr>
+            <tr><td>Ip</td><td id="ip"></td></tr>
+            <tr><td>Pin</td><td id="pin"></td></tr>
+            <tr><td>Vs</td><td id="vs"></td></tr>
+            <tr><td>Is</td><td id="is"></td></tr>
+            <tr><td>Pout</td><td id="pout"></td></tr>
+            <tr><td>Efficiency η</td><td id="eff"></td></tr>
+        </table>
+    </section>
+
+    <section class="graph">
+        <h2>Efficiency vs Load Resistance</h2>
+        <canvas id="effChart"></canvas>
+    </section>
+
+    <script src="simulation/transformer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
